@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        padding: 10px;
+    }
+
+    .nav-items {
+        display: flex;
+
+        a {
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+    }
+}
