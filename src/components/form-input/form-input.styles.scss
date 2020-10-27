@@ -1,0 +1,15 @@
+.form-input-group {
+    label {
+        display: block;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid black;
+        width: 100%;
+    }
+
+    input:focus {
+        outline: none;
+    }
+}

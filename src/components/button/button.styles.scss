@@ -1,0 +1,31 @@
+.button-submit {
+    min-width: 165px;
+    width: auto;
+    height: 50px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    color: white;
+    background-color: black;
+    padding: 0 35px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    &.button-googleSignin {
+        background-color: #4285f4;
+        color: white;
+
+        &:hover {
+            background-color: #357ae8;
+            border: none;
+        }
+    }
+}
