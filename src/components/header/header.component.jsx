@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
+
 import { auth } from '../../firebase/firebase.utils';
+import CartIcon from '../cart-icon/cart-icon.component';
+
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 import './header.styles.scss';
 
@@ -13,13 +16,10 @@ const Header = ({ currentUser }) => (
         <div className="nav-items">
             <Link to="/shop">SHOP</Link>
             <Link to="/contact">CONTACT</Link>
-            {
-                currentUser ?
-                    <div onClick={() => auth.signOut()}>SIGN OUT</div>
-                    :
-                    <Link to="/signin">SIGN IN</Link>
+            {currentUser ? <div onClick={() => auth.signOut()}>SIGN OUT</div>
+             :<Link to="/signin">SIGN IN</Link>
             }
-
+            <CartIcon />
         </div>
     </nav>
 )
