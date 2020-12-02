@@ -1,4 +1,4 @@
-.button-submit {
+.button {
     min-width: 165px;
     width: auto;
     height: 50px;
@@ -26,6 +26,17 @@
         &:hover {
             background-color: #357ae8;
             border: none;
+        }
+    }
+
+    &.inverted {
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+
+        &:hover {
+            color: white;
+            background-color: black;
         }
     }
 }

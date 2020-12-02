@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../button/button.component';
 import './preview-item.styles.scss';
 
 const PreviewItem = ({ id, name, imageUrl, price }) => (
@@ -8,6 +9,7 @@ const PreviewItem = ({ id, name, imageUrl, price }) => (
             <p className="name">{name}</p>
             <p className="price">${price}</p>
         </div>
+        <Button inverted={true}>ADD TO CART</Button>
     </div>
 )
 
