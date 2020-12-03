@@ -1,8 +1,9 @@
-import { act } from 'react-dom/test-utils';
 import CartActionTypes from './cart.actiontypes';
+import { addItemToCart } from './cart.utils';
 
 const INITIAL_STATE = {
-    showCartDropdown: false
+    showCartDropdown: false,
+    cartItems: []
 }
 
 const cartReducer = (state = INITIAL_STATE, action) => {
@@ -12,6 +13,13 @@ const cartReducer = (state = INITIAL_STATE, action) => {
                 ...state,
                 showCartDropdown: !state.showCartDropdown
             }
+
+        case CartActionTypes.ADD_ITEM:
+            return {
+                ...state,
+                cartItems: addItemToCart(state.cartItems, action.payload)
+            }
+
         default:
             return state;
     }
