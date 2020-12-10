@@ -14,3 +14,8 @@ export const selectCartItemsCount = createSelector(
         0
     ))
 )
+
+export const selectShowCartDropdown = createSelector(
+    [selectCart],
+    (cart) => cart.showCartDropdown
+)
