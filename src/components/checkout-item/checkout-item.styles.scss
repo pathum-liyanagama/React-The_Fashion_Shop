@@ -1,0 +1,16 @@
+.checkout-item {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        width: 80px;
+    }
+
+    .remove-button {
+        width: 8%;
+    }
+}
