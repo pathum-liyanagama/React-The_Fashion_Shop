@@ -5,13 +5,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: flex-start;
+    margin: 0 auto;
 
     img {
-        width: 80px;
+        width: 100px;
     }
 
     .remove-button {
-        width: 8%;
         cursor: pointer;
     }
 

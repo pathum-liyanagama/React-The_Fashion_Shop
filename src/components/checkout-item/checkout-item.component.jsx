@@ -10,12 +10,13 @@ const CheckoutItem = ({ item, addItem, removeItem, decreaseItemCount }) => {
         <div className="checkout-item">
             <img alt={name} src={imageUrl}></img>
             <span>{name}</span>
+            <span>${price}</span>
             <div>
                 <span className="arrow" onClick={() => quantity > 1 && decreaseItemCount(item)}>&#10094;</span>
                 <span>{quantity}</span>
                 <span className="arrow" onClick={() => addItem(item)}>&#10095;</span>
             </div>
-            <span>{price}</span>
+            <span>${quantity * price}</span>
             <div className="remove-button" onClick={() => removeItem(item)}>&#10006;</div>
         </div>
     )

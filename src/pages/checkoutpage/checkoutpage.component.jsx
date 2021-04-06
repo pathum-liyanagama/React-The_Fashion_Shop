@@ -11,8 +11,9 @@ const CheckoutPage = ({ cartItems, total }) => (
         <div className="checkout-header">
             <span>Product</span>
             <span>Description</span>
+            <span>Unit Price</span>
             <span>Quantity</span>
-            <span>Price</span>
+            <span>Subtotal</span>
             <span>Remove</span>
         </div>
 
